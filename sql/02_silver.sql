@@ -25,3 +25,8 @@ SELECT COUNT(*) AS TOTAL_RECORDS FROM SILVER.STORE_SALES_CLEAN;
 select count(*) from SILVER.STORE_SALES_CLEAN where ss_sales_price  is null;
 
 select count(*) from SILVER.STORE_SALES_CLEAN where ss_quantity <= 0;
+
+
+
+
+
