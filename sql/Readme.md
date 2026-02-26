@@ -22,10 +22,17 @@ Bronze → Silver → Gold layered design
 ## Project Structure
 See `/sql` for implementation scripts.
 
-## Fact table  Grain
+## CI/CD Workflow
 
-FACT_SALES grain:
-One row per customer per store per transaction date.
+Branch Strategy:
+- dev → Development
+- main → Production-ready
 
-Measures:
-- sales_price (additive)
+Deployment Process:
+1. Develop changes in dev branch.
+2. Run data quality tests (09_data_quality_tests.sql).
+3. Validate results.
+4. Create Pull Request.
+5. Merge to main after review.
+
+All changes must pass validation checks before merge.
