@@ -1,3 +1,4 @@
+
 flowchart TB
     subgraph Bronze
         A1[STORE_SALES_RAW]
@@ -23,4 +24,3 @@ flowchart TB
     B3 --> C2
     B3 --> C3
     B3 --> C4
-
